@@ -1,6 +1,18 @@
-def superhero_intro(dictionary):
-    for key, val in dictionary.items():
-        print(f'My superhero name is {key} and my superpower is {val}')
+# def superhero_intro(dictionary):
+#     for key, val in dictionary.items():
+#         print(f'My superhero name is {key} and my superpower is {val}')
+
+# belts = ["black", "black", "red", "white"]
+# print(belts.count("black"))
+# heroes = {"batman": "black", "robin": "red"}
+# print(list(heroes.values()))
+
+
+def belt_count(dictionary):
+    belts = list(dictionary.values())
+    for belt in set(belts):
+        num = belts.count(belt)
+        print(f"There are {num} {belt} belts")
 
 
 super_heroes = {}
@@ -16,7 +28,11 @@ while True:
     else:
         break
 
-superhero_intro(super_heroes)
+belt_count(super_heroes)
+
+# print(belts)
+
+# superhero_intro(super_heroes)
 
 # name = input("What is your name?")
 # print(f'Hello there {name}')
